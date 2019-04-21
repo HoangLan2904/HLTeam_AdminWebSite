@@ -1,0 +1,185 @@
+<div id="content-wrapper">
+
+    <div class="container-fluid">
+
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Tables</li>
+      </ol>
+
+      <!-- DataTables Example -->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fas fa-table"></i>
+          Danh sách người dùng</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Tên</th>
+                  <th>Công việc</th>
+                  <th>Địa chỉ</th>
+                  <th>Tuổi</th>
+                  <th>Ngày tham gia</th>
+                  
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Tên</th>
+                  <th>Công việc</th>
+                  <th>Địa chỉ</th>
+                  <th>Tuổi</th>
+                  <th>Ngày tham gia</th>
+                  
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>Tiger Nixon</td>
+                  <td>System Architect</td>
+                  <td>Edinburgh</td>
+                  <td>61</td>
+                  <td>2011/04/25</td>
+                </tr>
+                <tr>
+                  <td>Garrett Winters</td>
+                  <td>Accountant</td>
+                  <td>Tokyo</td>
+                  <td>63</td>
+                  <td>2011/07/25</td>
+                </tr>
+                <tr>
+                  <td>Ashton Cox</td>
+                  <td>Junior Technical Author</td>
+                  <td>San Francisco</td>
+                  <td>66</td>
+                  <td>2009/01/12</td>
+                </tr>
+                <tr>
+                  <td>Cedric Kelly</td>
+                  <td>Senior Javascript Developer</td>
+                  <td>Edinburgh</td>
+                  <td>22</td>
+                  <td>2012/03/29</td>
+                </tr>
+                <tr>
+                  <td>Airi Satou</td>
+                  <td>Accountant</td>
+                  <td>Tokyo</td>
+                  <td>33</td>
+                  <td>2008/11/28</td>
+                </tr>
+                <tr>
+                  <td>Brielle Williamson</td>
+                  <td>Integration Specialist</td>
+                  <td>New York</td>
+                  <td>61</td>
+                  <td>2012/12/02</td>
+                </tr>
+                <tr>
+                  <td>Herrod Chandler</td>
+                  <td>Sales Assistant</td>
+                  <td>San Francisco</td>
+                  <td>59</td>
+                  <td>2012/08/06</td>
+                </tr>
+                <tr>
+                  <td>Rhona Davidson</td>
+                  <td>Integration Specialist</td>
+                  <td>Tokyo</td>
+                  <td>55</td>
+                  <td>2010/10/14</td>
+                </tr>
+                <tr>
+                  <td>Colleen Hurst</td>
+                  <td>Javascript Developer</td>
+                  <td>San Francisco</td>
+                  <td>39</td>
+                  <td>2009/09/15</td>
+                </tr>
+                <tr>
+                  <td>Sonya Frost</td>
+                  <td>Software Engineer</td>
+                  <td>Edinburgh</td>
+                  <td>23</td>
+                  <td>2008/12/13</td>                  
+                </tr>               
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>
+
+      <div class="container">
+        <div class="card card-register mx-auto mt-5">
+          <div class="card-header">Thay đổi thông tin người dùng</div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <div class="form-label-group">
+                      <input type="text" id="firstName" class="form-control" placeholder="First name" required="required" autofocus="autofocus">
+                      <label for="firstName">Tên người dùng</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-label-group">
+                      <input type="text" id="lastName" class="form-control" placeholder="Last name" required="required">
+                      <label for="lastName">Công việc</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required">
+                  <label for="inputEmail">Địa chỉ</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <div class="form-label-group">
+                      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
+                      <label for="inputPassword">Tuổi</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-label-group">
+                      <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm password" required="required">
+                      <label for="confirmPassword">Ngày tham gia</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary btn-block" href="login.html">Lưu</a>
+          </div>
+        </div>
+
+        <div class="container">
+            <div class="card card-register mx-auto mt-5">
+              <div class="card-header">Xóa người dùng</div>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <div class="form-row">
+                      <div class="col-md-6">
+                        <div class="form-label-group">
+                          <input type="text" id="firstName" class="form-control" placeholder="First name" required="required" autofocus="autofocus">
+                          <label for="firstName">Tên người dùng</label>
+                        </div>
+                      </div>  
+                    </div>
+                  </div>
+                  <a class="btn btn-primary btn-block" href="login.html">Xóa</a>
+              </div>
+            </div>
+
+    </div>

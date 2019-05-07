@@ -1,21 +1,15 @@
 var express = require('express');
 var router = express.Router();
 
+
+const IndexController = require('../Controllers/index');
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+router.get('/', IndexController.index);
 
-router.get('/table-user', function(req, res, next) {
-  res.render('table_user', { title: 'Express' });
-});
+router.get('/table-user', IndexController.table_user);
 
-router.get('/table-book', function(req, res, next) {
-  res.render('table_book', { title: 'Express' });
-});
+router.get('/table-book', IndexController.table_book);
 
-router.get('/charts', function(req, res, next) {
-  res.render('charts', { title: 'Express' });
-});
+router.get('/charts', IndexController.chart);
 
 module.exports = router;

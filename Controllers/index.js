@@ -3,7 +3,7 @@ var mysql = require('mysql');
 var connection = mysql.createConnection({
     host:'localhost',
     user:'root',
-    password:'123456789',
+    password:'lannguyenit598',
     database:'quanlysach',
   });
   connection.connect();
@@ -31,6 +31,49 @@ exports.table_book = function(req, res, next) {
     });
   });
 }
+
+// exports.addbook = function(req, res, next) {
+//   req.assert('txtID', 'Name is required').notEmpty()        
+//   req.assert('txtName', 'Name is required').notEmpty()           
+//   req.assert('txtNCC', 'A valid NCC is required').notEmpty()  
+//   req.assert('txtGiaBan', 'Name is required').notEmpty()           
+//   req.assert('txtSoLuong', 'A valid NCC is required').notEmpty()  
+//   var errors = req.validationErrors()
+     
+//   if( !errors ) {   //No errors were found.  Passed Validation!
+         
+     
+//         var book = {
+//             MAKHO: req.sanitize('txtID').escape().trim(),
+//             tenSP: req.sanitize('name').escape().trim(),
+//             nhaCungCap: req.sanitize('txtNCC').escape().trim(),
+//             gia: req.sanitize('txtGiaBan').escape().trim(),
+//             soLuong: req.sanitize('txtSoLuong').escape().trim()
+//         }
+         
+//      connection.query('INSERT INTO khosach SET ?', book, function(err, result) {
+//                 //if(err) throw err
+//                 if (err) {
+//                     req.flash('error', err)
+                     
+//                     res.render('/index')
+//                 } else {                
+//                     req.flash('success', 'Data added successfully!');
+//                     res.redirect('/table-book');
+//                 }
+//             })
+//     }
+//     else {   //Display errors to user
+//         var error_msg = ''
+//         errors.forEach(function(error) {
+//             error_msg += error.msg + '<br>'
+//         })                
+//         req.flash('error', error_msg)        
+//         res.render('table-book')
+//     }
+// }
+
+
 
 exports.chart =  function(req, res, next) {
   res.render('charts', { title: 'Express' });

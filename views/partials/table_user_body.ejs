@@ -41,86 +41,16 @@
                 </tr>
               </tfoot>
               <tbody>
-                <tr>
-                  <th>330</th>
-                  <td>Nguyễn Văn Lân</td>
-                  <td>Lập Trình Viên</td>
-                  <td>368 Lê Hồng Phong, Quận 10, TP.HCM</td>
-                  <td>21</td>
-                  <td>2018/04/25</td>
-                </tr>
-                <tr>
-                  <th>642</th>
-                  <td>Trần Mai Anh</td>
-                  <td>Giáo Viên</td>
-                  <td>22 Hùng Vương, Quận 10, TP.HCM</td>
-                  <td>25</td>
-                  <td>2019/03/25</td>
-                </tr>
-                <tr>
-                  <th>245</th>
-                  <td>Trần Sỹ Hùng</td>
-                  <td>Ca Sĩ</td>
-                  <td>87 Đào Duy Từ, Quận 2, Quảng Bình</td>
-                  <td>20</td>
-                  <td>2017/01/12</td>
-                </tr>
-                <tr>
-                  <th>684</th>
-                  <td>Nguyễn Gia Bảo</td>
-                  <td>Học Sinh</td>
-                  <td>78 Cổ Nhuế, Quận Ba Đình, Hà Nội</td>
-                  <td>17</td>
-                  <td>2019/03/29</td>
-                </tr>
-                <tr>
-                  <th>327</th>
-                  <td>Mai Thành Lân</td>
-                  <td>Bác sĩ</td>
-                  <td>228 Cách Mạng Tháng Tám, Quận 10, TP.HCM</td>
-                  <td>33</td>
-                  <td>2018/11/28</td>
-                </tr>
-                <tr>
-                  <th>975</th>
-                  <td>Đặng Quang Huy</td>
-                  <td>Thợ Chụp Ảnh</td>
-                  <td>32 Âu Cơ, Bảo Lộc, Lâm Đồng</td>
-                  <td>31</td>
-                  <td>2018/12/02</td>
-                </tr>
-                <tr>
-                  <th>365</th>
-                  <td>Trần Liêm Khiết</td>
-                  <td>Marketing</td>
-                  <td>45 Nguyễn Văn Cừ, Quận 5, TP.HCM</td>
-                  <td>27</td>
-                  <td>2018/08/06</td>
-                </tr>
-                <tr>
-                  <th>346</th>
-                  <td>Lê Văn Đạt</td>
-                  <td>Cầu Thủ</td>
-                  <td>67 Cao Bá Quát, Thành Phố Vinh, Nghệ An</td>
-                  <td>24</td>
-                  <td>2018/10/14</td>
-                </tr>
-                <tr>
-                  <th>123</th>
-                  <td>Lê Lan Anh</td>
-                  <td>Người Mẫu</td>
-                  <td>450 Điện Biên Phủ, Quận 5, TP.HCM</td>
-                  <td>27</td>
-                  <td>2017/09/15</td>
-                </tr>
-                <tr>
-                  <th>358</th>
-                  <td>Trần Thúy Hằng</td>
-                  <td>Đầu Bếp</td>
-                  <td>589 An Dương Vương, Quận 10, TP.HCM</td>
-                  <td>23</td>
-                  <td>2018/12/13</td>                  
-                </tr>               
+                  <% khachhang.forEach(function(item){%>
+                    <tr>
+                        <th><%=item.MAKH%></th>
+                        <td><%=item.ten%></td>
+                        <td><%=item.congViec%></td>
+                        <td><%=item.diaChi%></td>
+                        <td><%=item.tuoi%></td>
+                        <td><%=item.ngayThamGia%></td>
+                      </tr>
+                  <%})%>                 
               </tbody>
             </table>
           </div>

@@ -35,66 +35,14 @@
                 </tr>
               </tfoot>
               <tbody>
-                <tr>
-                  <td>Nhà Giả Kim</td>
-                  <td>Nhà Sách Phương Nam</td>
-                  <td>100.000</td>
-                  <td>61</td>
-                </tr>
-                <tr>
-                  <td>Đắc Nhân Tâm</td>
-                  <td>Nhà Sách Phương Nam</td>
-                  <td>150.000</td>
-                  <td>63</td>
-                </tr>
-                <tr>
-                  <td>Harry Potter</td>
-                  <td>Nhà Sách Thiếu Nhi</td>
-                  <td>300.000</td>
-                  <td>66</td>
-                </tr>
-                <tr>
-                  <td>Doremon Tập 1</td>
-                  <td>Nhà Sách Thiếu Nhi</td>
-                  <td>50.000</td>
-                  <td>22</td>
-                </tr>
-                <tr>
-                  <td>Tony Buổi sáng</td>
-                  <td>Nhà Sách Dân Trí</td>
-                  <td>199.000</td>
-                  <td>33</td>
-                </tr>
-                <tr>
-                  <td>Tiếng Việt 1</td>
-                  <td>Nhà Sách Giáo Dục</td>
-                  <td>60.000</td>
-                  <td>61</td>
-                </tr>
-                <tr>
-                  <td>Người Trong Gương</td>
-                  <td>Nhà Sách Phương Nam</td>
-                  <td>170.000</td>
-                  <td>59</td>
-                </tr>
-                <tr>
-                  <td>Tấm Cám</td>
-                  <td>Nhà Sách Thiếu Nhi</td>
-                  <td>80.000</td>
-                  <td>55</td>
-                </tr>
-                <tr>
-                  <td>Vui Sống Mỗi Ngày</td>
-                  <td>Nhà Sách Phương Nam</td>
-                  <td>90.000</td>
-                  <td>39</td>
-                </tr>
-                <tr>
-                  <td>Cẩm Nang Ẩm Thực</td>
-                  <td>Nhà Sách Phương Nam</td>
-                  <td>160.000</td>
-                  <td>23</td>                 
-                </tr>               
+                  <% khosach.forEach(function(item){%>
+                    <tr>
+                        <th><%=item.tenSP%></th>
+                        <td><%=item.nhaCungCap%></td>
+                        <td><%=item.gia%></td>
+                        <td><%=item.soLuong%></td>                      
+                      </tr>
+                  <%})%>
               </tbody>
             </table>
           </div>
@@ -126,66 +74,14 @@
                 </tr>
               </tfoot>
               <tbody>
-                <tr>
-                  <td>Nhà Giả Kim</td>
-                  <td>Nhà Sách Phương Nam</td>
-                  <td>100.000</td>
-                  <td>610</td>
-                </tr>
-                <tr>
-                  <td>Đắc Nhân Tâm</td>
-                  <td>Nhà Sách Phương Nam</td>
-                  <td>150.000</td>
-                  <td>580</td>
-                </tr>
-                <tr>
-                  <td>Harry Potter</td>
-                  <td>Nhà Sách Thiếu Nhi</td>
-                  <td>300.000</td>
-                  <td>440</td>
-                </tr>
-                <tr>
-                  <td>Doremon Tập 1</td>
-                  <td>Nhà Sách Thiếu Nhi</td>
-                  <td>50.000</td>
-                  <td>405</td>
-                </tr>
-                <tr>
-                  <td>Tony Buổi sáng</td>
-                  <td>Nhà Sách Dân Trí</td>
-                  <td>199.000</td>
-                  <td>300</td>
-                </tr>
-                <tr>
-                  <td>Tiếng Việt 1</td>
-                  <td>Nhà Sách Giáo Dục</td>
-                  <td>60.000</td>
-                  <td>298</td>
-                </tr>
-                <tr>
-                  <td>Người Trong Gương</td>
-                  <td>Nhà Sách Phương Nam</td>
-                  <td>170.000</td>
-                  <td>150</td>
-                </tr>
-                <tr>
-                  <td>Tấm Cám</td>
-                  <td>Nhà Sách Thiếu Nhi</td>
-                  <td>80.000</td>
-                  <td>120</td>
-                </tr>
-                <tr>
-                  <td>Vui Sống Mỗi Ngày</td>
-                  <td>Nhà Sách Phương Nam</td>
-                  <td>90.000</td>
-                  <td>70</td>
-                </tr>
-                <tr>
-                  <td>Cẩm Nang Ẩm Thực</td>
-                  <td>Nhà Sách Phương Nam</td>
-                  <td>160.000</td>
-                  <td>50</td>                 
-                </tr>           
+                  <% banchay.forEach(function(item){%>
+                    <tr>
+                        <th><%=item.tenSP%></th>
+                        <td><%=item.nhaCungCap%></td>
+                        <td><%=item.gia%></td>
+                        <td><%=item.SLDaBan%></td>                      
+                      </tr>
+                  <%})%>           
               </tbody>
             </table>
           </div>

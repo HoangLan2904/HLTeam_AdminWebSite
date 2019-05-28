@@ -35,6 +35,21 @@ router.get('/delete',function(req,res,next){
     })
 })
 
+router.get('/detail-account' ,function(req,res,next){
+    res.render('/detail-account');
+})
+
+router.get('/forgot-password' ,function(req,res,next){
+    res.render('/forgot-password');
+})
+
+router.get('/login' ,function(req,res,next){
+    res.render('/login');
+})
+
+router.get('/register' ,function(req,res,next){
+    res.render('/register');
+})
 
 router.get('/charts', IndexController.chart);
 

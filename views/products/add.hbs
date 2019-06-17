@@ -1,0 +1,80 @@
+<div class="col-sm">
+    <div class="card">
+        <div class="card-header">
+            <strong>Tạo sản phẩm mới</strong>
+        </div>
+        <form action="/product/add" method="post" class="">
+            <div class="card-body card-block">
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="category" class=" form-control-label">Thể loại</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <select name="category" id="category" class="form-control-lg form-control">
+                            <option value="0">Tên thể loại</option>
+                            {{#if data}}
+                                {{#each data}}
+                                <option value="{{this.name}}">{{this.name}}</option>
+                                {{/each}}
+                            {{/if}}
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="name" class=" form-control-label">Tên sản phẩm</label>
+                    </div>
+                    <div class="col-12 col-md-9"><input type="text" id="name" name="name" placeholder="Tên"
+                                                        class="form-control">
+                        <small class="form-text text-muted">Nhập tên sản phẩm</small>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="count" class=" form-control-label">Số lượng</label>
+                    </div>
+                    <div class="col-12 col-md-4"><input type="text" id="count" name="count" placeholder="Số lượng"
+                                                        class="form-control">
+                        <small class="help-block form-text">Đơn vị: quyển</small>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="price" class=" form-control-label">Giá sản phẩm</label>
+                    </div>
+                    <div class="col-12 col-md-4"><input type="text" id="price" name="price" placeholder="Giá"
+                                                        class="form-control">
+                        <small class="form-text text-muted">Đơn giá: VNĐ</small>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="price" class=" form-control-label">Giá khuyến mãi</label>
+                    </div>
+                    <div class="col-12 col-md-4"><input type="text" id="promotionprice" name="promotionprice" placeholder="Giá"
+                                                        class="form-control">
+                        <small class="form-text text-muted">Đơn giá: VNĐ</small>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="name" class=" form-control-label">Mô tả sản phẩm</label>
+                    </div>
+                    <div class="col-12 col-md-9"><input type="text" id="description" name="description" placeholder="Mô tả"
+                                                        class="form-control">
+                        <small class="form-text text-muted">Nhập mô tả sản phẩm</small>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="file-multiple-input" class=" form-control-label">Hình ảnh sản
+                        phẩm</label></div>
+                    <div class="col-12 col-md-9"><input type="file" accept="image/*" id=" file-multiple-input"
+                                                        name="image" multiple=""
+                                                        class="form-control-file"></div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary btn-sm">
+                    <i class="fa fa-plus"></i> Thêm
+                </button>
+                <button type="reset" class="btn btn-danger btn-sm">
+                    <i class="fa fa-sync-alt"></i> Nhập lại
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
